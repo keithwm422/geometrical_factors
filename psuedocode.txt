@@ -1,0 +1,18 @@
+#This file has the pseudo-code for notes to start a program for calculating the detector's geometrical factor. 
+
+#Formulae: assuming isotropic flux and seperable from energy, G=integral over solid angle observed times integral over the exposed area of detector.
+#in detail: integral dw over all solid angle times integral over d(sigma) dot r-hat which points into direction of particle incoming. 
+
+
+# 1st test should be to simply recover for one planar detector observing 1/2 sky. should be G=pi*A_{detector}
+
+
+
+// psuedo-code//
+
+// TRandom sampling of point on grid for detector
+// TRandom sampling of trajectory** through that point (is the particles trajectory).
+// ** optional ** follow trajectory to pass through another detector?
+// Plots in intermediate steps to make sure the sampling is being done correct. 
+//  // These plots include: theta vs phi for the particle trajectory (to see uniform sampling of that) and point on detector area (to see uniform sampling of that). 
+// Will should be able to start this. 
